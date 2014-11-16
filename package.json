@@ -1,0 +1,53 @@
+{
+  "name": "grunt-sakugawa",
+  "version": "0.1.0",
+  "description": "Run Sakugawa via Grunt for CSS splitting, filtering and organising",
+  "homepage": "https://github.com/paazmaya/grunt-sakugawa",
+  "author": {
+    "name": "Juga Paazmaya",
+    "email": "olavic@gmail.com",
+    "url": "http://paazmaya.com"
+  },
+  "main": "tasks/sakugawa.js",
+  "scripts": {
+    "test": "",
+    "coverage": ""
+  },
+  "files": [
+    "tasks",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paazmaya/grunt-sakugawa.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "css",
+    "selector",
+    "ie8",
+    "ie9",
+    "media-query",
+    "split",
+    "filter",
+    "organize"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/paazmaya/grunt-sakugawa/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/paazmaya/grunt-sakugawa/issues"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4"
+  }.
+  "dependencies": {
+    "sakugawa": "~0.1"
+  },
+  "devDependencies": {
+  }
+}
