@@ -10,7 +10,7 @@
   },
   "main": "tasks/sakugawa.js",
   "scripts": {
-    "test": "",
+    "test": "grunt test",
     "coverage": ""
   },
   "files": [
@@ -42,12 +42,17 @@
   "bugs": {
     "url": "https://github.com/paazmaya/grunt-sakugawa/issues"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "peerDependencies": {
     "grunt": "~0.4"
-  }.
+  },
   "dependencies": {
     "sakugawa": "~0.1"
   },
   "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-clean": "~0.6"
   }
 }
