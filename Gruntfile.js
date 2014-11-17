@@ -17,12 +17,12 @@ module.exports = function(grunt) {
     },
 
     sakugawa: {
-      default_options: {
+      pure: {
         options: {
+          maxSelectors: 400,
+          mediaQueries: 'separate'
         },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+        src: ['pure-min.css']
       }
     }
 

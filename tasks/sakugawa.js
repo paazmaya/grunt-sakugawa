@@ -8,39 +8,37 @@
 
 'use strict';
 
-module.exports = function(grunt) {
+var sakugawa = require('sakugawa');
 
-  grunt.registerMultiTask('sakugawa', 'The best Grunt plugin ever.', function() {
+module.exports = function (grunt) {
+
+  grunt.registerMultiTask('sakugawa', 'CSS splitter, filter and organiser', function () {
 
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      maxSelectors: 4090,
+      mediaQueries: 'normal',
+      suffix: '_'
     });
 
-    // Iterate over all specified file groups.
-    this.files.forEach(function(f) {
-      // Concat specified files.
-      var src = f.src.filter(function(filepath) {
+    this.files.forEach(function (file) {
+      var src = file.src.filter(function (filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
           return false;
-        } else {
+        }
+        else {
           return true;
         }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
-      }).join(grunt.util.normalizelf(options.separator));
+      });
 
-      // Handle options.
-      src += options.punctuation;
+      src.forEach(function (srcPath) {
+        var pages = sakugawa(grunt.file.read(srcPath), options);
+        pages.forEach(function (css, index) {
+          grunt.file.write(srcPath.replace(/\.css/, options.suffix + (index + 1) + '.css'), css);
+        });
+      });
 
-      // Write the destination file.
-      grunt.file.write(f.dest, src);
-
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
     });
   });
 

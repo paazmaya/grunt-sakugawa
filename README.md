@@ -1,8 +1,9 @@
-# grunt-sakugawa
+# grunt-sakugawa (グラント佐久川)
 
 > Run [Sakugawa](https://github.com/paazmaya/sakugawa "CSS splitter, filter and organiser")
 > via [Grunt](http://gruntjs.com/ "The JavaScript Task Runner"), for CSS splitting, filtering and organising.
 
+![Mr Sakugawa and Mr Grunt](./grunt-sakugawa-logo.png)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-sakugawa/index)](https://github.com/igrigorik/ga-beacon)
 
 ## Installation
@@ -19,35 +20,63 @@ grunt.loadNpmTasks('grunt-sakugawa');
 
 ### Overview
 
-In your project's Gruntfile, add a section named `sakugawa` to the data object passed
-into `grunt.initConfig()`.
+Example configuration against [Pure CSS](http://purecss.io/ "A set of small, responsive CSS modules that you can use in every web project"),
+which results in two files, `pure-min_1.css` and `pure-min_2.css` in which the latter
+contains all media queries.
+
 
 ```js
 grunt.initConfig({
   sakugawa: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+    sakugawa: {
+      pure: {
+        options: {
+          maxSelectors: 400,
+          mediaQueries: 'separate',
+          suffix: '_'
+        },
+        src: ['pure-min.css']
+      }
+    }
   },
 });
 ```
 
 ### Options
 
-#### options.separator
+#### options.maxSelectors
+
+Type: `Number`
+
+Default value: `4090`
+
+Maximum number of selector in a single resulting file.
+The actual selector count might be a bit lower based
+on the distribution of the selectors.
+
+#### options.mediaQueries
 
 Type: `String`
-Default value: `',  '`
 
-A string value that is used to do something with whatever.
+Default value: `'normal'`
+
+Media query handling, separation to different file (separate) or ignorance (ignore).
+By default media queries are included as they appear in the original CSS.
+
+
+#### options.suffix
+
+Type: `String`
+
+Default value: `'_'`
+
+Output CSS file suffix.
+For example the underscore before file counter, `styles_1.css`.
 
 
 ## Version history
 
-None yet..
+v0.1.0 (2014-11-17) Initial release matching with Sakugawa release
 
 ## License
 
