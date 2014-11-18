@@ -3,7 +3,7 @@
 > Run [Sakugawa](https://github.com/paazmaya/sakugawa "CSS splitter, filter and organiser")
 > via [Grunt](http://gruntjs.com/ "The JavaScript Task Runner"), for CSS splitting, filtering and organising.
 
-![Mr Sakugawa and Mr Grunt](./grunt-sakugawa-logo.png)
+![Mr Sakugawa and Mr Grunt](./logo.png)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-sakugawa/index)](https://github.com/igrigorik/ga-beacon)
 [![Dependency Status](https://david-dm.org/paazmaya/grunt-sakugawa.svg)](https://david-dm.org/paazmaya/grunt-sakugawa)
 [![devDependency Status](https://david-dm.org/paazmaya/grunt-sakugawa/dev-status.svg)](https://david-dm.org/paazmaya/grunt-sakugawa#info=devDependencies)
@@ -42,6 +42,12 @@ grunt.initConfig({
     }
   },
 });
+```
+
+The CSS file used in the example can be retrieved with:
+
+```sh
+wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 ```
 
 ### Options
