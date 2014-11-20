@@ -84,8 +84,8 @@ For example the underscore before file counter, `styles_1.css`.
 
 ## Version history
 
-v0.2.0 (2014-11-19) Speed improvements release of Sakugawa migration
-v0.1.0 (2014-11-17) Initial release matching with Sakugawa release
+* v0.2.0 (2014-11-19) Speed improvements release of Sakugawa migration
+* v0.1.0 (2014-11-17) Initial release matching with Sakugawa release
 
 ## License
 
