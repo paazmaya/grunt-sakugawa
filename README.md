@@ -6,8 +6,9 @@
 ![Mr Sakugawa and Mr Grunt](./logo.png)
 
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-sakugawa/index)](https://github.com/igrigorik/ga-beacon)
-[![Dependency Status](//img.shields.io/david-dm/paazmaya/grunt-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa)
-[![devDependency Status](//img.shields.io/david-dm/paazmaya/grunt-sakugawa/dev-status.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa#info=devDependencies)
+[![Dependency Status](https://img.shields.io/david-dm/paazmaya/grunt-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa)
+[![devDependency Status](https://img.shields.io/david-dm/paazmaya/grunt-sakugawa/dev-status.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa#info=devDependencies)
+[![Built with Grunt](http://img.shields.io/badge/Grunt-0.4-blue.svg?style=flat-square)](http://gruntjs.com/)
 
 [Internet Explorer versions from 6 up to 9 come with a limitation][ieinternals] for
 selectors present in a single CSS file. This limitation of 4095 selectors created the
