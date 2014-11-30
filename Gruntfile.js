@@ -2,7 +2,7 @@
  * grunt-sakugawa
  * https://github.com/paazmaya/grunt-sakugawa
  *
- * Copyright (c) Juga Paazmaya
+ * Copyright (c) Juga Paazmaya <olavic@gmail.com>
  * Licensed under the MIT license.
  */
 
