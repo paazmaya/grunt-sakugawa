@@ -10,7 +10,7 @@
   },
   "main": "tasks/sakugawa.js",
   "scripts": {
-    "test": "grunt test",
+    "test": "grunt && node_modules/.bin/tape tests/sakugawa_tape.js",
     "coverage": ""
   },
   "files": [
@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-contrib-clean": "~0.6"
+    "grunt-contrib-clean": "~0.6",
+    "tape": "~3.0"
   }
 }
