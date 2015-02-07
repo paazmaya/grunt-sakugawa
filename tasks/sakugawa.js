@@ -31,11 +31,18 @@ module.exports = function (grunt) {
           return true;
         }
       });
+      var contents, pages, dest = file.dest;
 
       src.forEach(function (srcPath) {
-        var pages = sakugawa(grunt.file.read(srcPath), options);
+        contents = grunt.file.read(srcPath);
+        pages = sakugawa(contents, options);
+
+        if (!dest) {
+          dest = srcPath;
+        }
+
         pages.forEach(function (css, index) {
-          grunt.file.write(srcPath.replace(/\.css/, options.suffix + (index + 1) + '.css'), css);
+          grunt.file.write(dest.replace(/\.css/, options.suffix + (index + 1) + '.css'), css);
         });
       });
 
