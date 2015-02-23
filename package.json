@@ -1,6 +1,6 @@
 {
   "name": "grunt-sakugawa",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Run Sakugawa via Grunt for CSS splitting, filtering and organising",
   "homepage": "https://github.com/paazmaya/grunt-sakugawa",
   "author": {
@@ -49,7 +49,7 @@
     "grunt": "~0.4"
   },
   "dependencies": {
-    "sakugawa": "~0.2"
+    "sakugawa": "~0.3"
   },
   "devDependencies": {
     "grunt": "~0.4",

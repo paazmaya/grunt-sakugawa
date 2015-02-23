@@ -6,8 +6,8 @@
 ![Mr Sakugawa and Mr Grunt](./logo.png)
 
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-sakugawa/index?flat)](https://github.com/igrigorik/ga-beacon)
-[![Dependency Status](https://img.shields.io/david-dm/paazmaya/grunt-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa)
-[![devDependency Status](https://img.shields.io/david-dm/paazmaya/grunt-sakugawa/dev-status.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa#info=devDependencies)
+[![Dependency Status](https://img.shields.io/david/paazmaya/grunt-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa)
+[![devDependency Status](https://img.shields.io/david/paazmaya/grunt-sakugawa/dev-status.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa#info=devDependencies)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-0.4-blue.svg?style=flat-square)](http://gruntjs.com/)
 
 [Internet Explorer versions from 6 up to 9 come with a limitation][ieinternals] for
@@ -80,6 +80,14 @@ Maximum number of selector in a single resulting file.
 The actual selector count might be a bit lower based
 on the distribution of the selectors.
 
+#### options.minSheets
+
+Type: `Number`
+
+Default value: `1`
+
+Minimum number of output CSS files
+
 #### options.mediaQueries
 
 Type: `String`
@@ -88,7 +96,6 @@ Default value: `'normal'`
 
 Media query handling, separation to different file (separate) or ignorance (ignore).
 By default media queries are included as they appear in the original CSS.
-
 
 #### options.suffix
 
@@ -106,6 +113,7 @@ For example the underscore before file counter, `styles_1.css`.
 
 ## Version history
 
+* v0.3.0 (2015-02-23) Update Sakugawa to `v0.3.0` which adds the `minSheets` option
 * v0.2.0 (2014-11-19) Speed improvements release of Sakugawa migration
 * v0.1.0 (2014-11-17) Initial release matching with Sakugawa release
 

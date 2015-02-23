@@ -17,6 +17,7 @@ module.exports = function (grunt) {
     var options = this.options({
       maxSelectors: 4090,
       mediaQueries: 'normal',
+      minSheets: 1,
       suffix: '_'
     });
 
@@ -31,7 +32,10 @@ module.exports = function (grunt) {
           return true;
         }
       });
-      var contents, pages, dest = file.dest;
+
+      var contents,
+        pages,
+        dest = file.dest;
 
       src.forEach(function (srcPath) {
         contents = grunt.file.read(srcPath);
@@ -40,9 +44,13 @@ module.exports = function (grunt) {
         if (!dest) {
           dest = srcPath;
         }
+        if (dest.substr(-1, 1) === '/') {
+          dest = dest + srcPath.split('/').pop();
+        }
 
         pages.forEach(function (css, index) {
-          grunt.file.write(dest.replace(/\.css/, options.suffix + (index + 1) + '.css'), css);
+          var target = dest.replace(/\.css/, options.suffix + (index + 1) + '.css');
+          grunt.file.write(target, css);
         });
       });
 
