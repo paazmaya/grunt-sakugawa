@@ -23,3 +23,10 @@ tape('media query separation', function (test) {
   test.equal(expected1, actual1);
   test.equal(expected2, actual2);
 });
+
+
+tape('suffix usage', function (test) {
+  test.plan(1);
+
+  test.ok(grunt.file.exists('tmp/suffixdash-split-1.css'));
+});

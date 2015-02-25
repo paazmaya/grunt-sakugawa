@@ -25,6 +25,29 @@ module.exports = function(grunt) {
         files: {
           'tmp/': ['tests/fixtures/pure-min.css']
         }
+      },
+      five: {
+        options: {
+          maxSelectors: 800,
+          minSheets: 5
+        },
+        files: {
+          'tmp/five.css': ['tests/fixtures/pure-min.css']
+        }
+      },
+      suffixdash: {
+        options: {
+          maxSelectors: 400,
+          suffix: '-split-'
+        },
+        files: {
+          'tmp/suffixdash.css': ['tests/fixtures/pure-min.css']
+        }
+      },
+      nonexisting: {
+        files: {
+          'tmp/': ['tests/fixtures/nonexisting.css']
+        }
       }
     }
 
