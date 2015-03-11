@@ -113,6 +113,7 @@ For example the underscore before file counter, `styles_1.css`.
 
 ## Version history
 
+* v0.4.0 (2015-03-11) Update Sakugawa to `v0.4.0` which preserves existing `@charset` rules to all resulting files
 * v0.3.1 (2015-02-25) Use at least Sakugawa `v0.3.2` due to its fixes. Better destination handling
 * v0.3.0 (2015-02-23) Update Sakugawa to `v0.3.0` which adds the `minSheets` option. Also fix task when destination is a directory
 * v0.2.0 (2014-11-19) Speed improvements release of Sakugawa migration
