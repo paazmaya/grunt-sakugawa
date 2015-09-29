@@ -5,8 +5,8 @@
   "homepage": "https://github.com/paazmaya/grunt-sakugawa",
   "author": {
     "name": "Juga Paazmaya",
-    "email": "olavic@gmail.com",
-    "url": "http://paazmaya.com"
+    "email": "paazmaya@yahoo.com",
+    "url": "http://paazmaya.divshot.io"
   },
   "main": "tasks/sakugawa.js",
   "scripts": {
@@ -33,12 +33,7 @@
     "filter",
     "organize"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/paazmaya/grunt-sakugawa/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/paazmaya/grunt-sakugawa/issues"
   },
@@ -54,6 +49,6 @@
   "devDependencies": {
     "grunt": "~0.4",
     "grunt-contrib-clean": "~0.6",
-    "tape": "^4.0.1"
+    "tape": "^4.2.0"
   }
 }
