@@ -8,11 +8,13 @@
 
 'use strict';
 
+var path = require('path');
+
 var sakugawa = require('sakugawa');
 
-module.exports = function (grunt) {
+module.exports = function gruntSakugawa(grunt) {
 
-  grunt.registerMultiTask('sakugawa', 'CSS splitter, filter and organiser', function () {
+  grunt.registerMultiTask('sakugawa', 'CSS splitter, filter and organiser', function register() {
 
     var options = this.options({
       maxSelectors: 4090,
@@ -21,8 +23,8 @@ module.exports = function (grunt) {
       suffix: '_'
     });
 
-    this.files.forEach(function (file) {
-      var src = file.src.filter(function (filepath) {
+    this.files.forEach(function eachFiles(file) {
+      var src = file.src.filter(function filterSrc(filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
@@ -37,18 +39,19 @@ module.exports = function (grunt) {
         pages,
         dest = file.dest;
 
-      src.forEach(function (srcPath) {
+      src.forEach(function eachSrc(srcPath) {
         contents = grunt.file.read(srcPath);
         pages = sakugawa(contents, options);
 
         if (!dest) {
           dest = srcPath;
         }
+
         if (dest.substr(-1, 1) === '/') {
-          dest = dest + srcPath.split('/').pop();
+          dest += path.basename(srcPath);
         }
 
-        pages.forEach(function (css, index) {
+        pages.forEach(function eachPages(css, index) {
           var target = dest.replace(/\.css/, options.suffix + (index + 1) + '.css');
           grunt.file.write(target, css);
         });

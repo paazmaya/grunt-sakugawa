@@ -8,9 +8,19 @@
 
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function gruntConf(grunt) {
 
   grunt.initConfig({
+    eslint: {
+      options: {
+        config: '.eslintrc',
+        format: 'stylish'
+      },
+      target: [
+        'Gruntfile.js',
+        'tasks/*.js'
+      ]
+    },
 
     clean: {
       tests: ['tmp']
@@ -56,8 +66,9 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
 
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-eslint');
 
-  grunt.registerTask('test', ['clean', 'sakugawa']);
+  grunt.registerTask('test', ['eslint', 'clean', 'sakugawa']);
   grunt.registerTask('default', ['test']);
 
 };
