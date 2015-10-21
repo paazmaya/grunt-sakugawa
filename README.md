@@ -121,7 +121,7 @@ For example the underscore before file counter, `styles_1.css`.
 
 ## License
 
-Copyright (c) Juga Paazmaya <olavic@gmail.com>
+Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
 
