@@ -2,15 +2,15 @@
  * grunt-sakugawa
  * https://github.com/paazmaya/grunt-sakugawa
  *
- * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (http://paazmaya.fi)
  * Licensed under the MIT license.
  */
 
 'use strict';
 
-var path = require('path');
+const path = require('path');
 
-var sakugawa = require('sakugawa');
+const sakugawa = require('sakugawa');
 
 module.exports = function gruntSakugawa(grunt) {
 

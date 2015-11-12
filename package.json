@@ -11,7 +11,8 @@
   "main": "tasks/sakugawa.js",
   "scripts": {
     "test": "grunt && node_modules/.bin/tape tests/sakugawa_tape.js",
-    "coverage": ""
+    "coverage": "",
+    "lint": "grunt eslint"
   },
   "files": [
     "tasks",
@@ -38,7 +39,7 @@
     "url": "https://github.com/paazmaya/grunt-sakugawa/issues"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.2.0"
   },
   "peerDependencies": {
     "grunt": "~0.4"
