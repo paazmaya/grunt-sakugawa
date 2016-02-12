@@ -45,12 +45,12 @@
     "grunt": "~0.4"
   },
   "dependencies": {
-    "sakugawa": "~0.4"
+    "sakugawa": "~0.5"
   },
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-contrib-clean": "~0.6",
+    "grunt-contrib-clean": "~0.7",
     "grunt-eslint": "~17.3",
-    "tape": "~4.2"
+    "tape": "~4.4"
   }
 }
