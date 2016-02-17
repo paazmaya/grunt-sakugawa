@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-contrib-clean": "~0.7",
+    "grunt-contrib-clean": "~1.0",
     "grunt-eslint": "~18.0",
     "tape": "~4.4"
   }
