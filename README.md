@@ -122,6 +122,12 @@ For example the underscore before file counter, `styles_1.css`.
 
 ## Version history
 
+* `v0.5.0` (2016-05-03)
+  - Update to match Sakugawa `v0.5.0`
+  - Compatible with Grunt `1.0.0`
+  - Use shared ESLint configuration #5
+  - Take ESLint in use
+  - Require Node.js version minimum of `4.2.0` (LTS)
 * `v0.4.0` (2015-03-11)
   - Update Sakugawa to `v0.4.0` which preserves existing `@charset` rules to all resulting files
 * `v0.3.1` (2015-02-25)
