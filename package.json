@@ -10,8 +10,8 @@
   },
   "main": "tasks/sakugawa.js",
   "scripts": {
-    "test": "grunt && node_modules/.bin/tape tests/sakugawa_tape.js",
-    "coverage": "",
+    "test": "grunt && node tests/sakugawa_tape.js",
+    "coverage": "istanbul cover tests/sakugawa_tape.js && codecov",
     "lint": "grunt eslint"
   },
   "files": [
@@ -48,6 +48,7 @@
     "sakugawa": "~0.5"
   },
   "devDependencies": {
+    "codecov": "~1.0",
     "eslint-config-paazmaya": "~1.0",
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.0",
