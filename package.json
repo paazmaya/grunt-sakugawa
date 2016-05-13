@@ -53,6 +53,7 @@
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.0",
     "grunt-eslint": "~18.1",
+    "istanbul": "^0.4.3",
     "tape": "~4.5"
   }
 }
