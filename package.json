@@ -11,7 +11,6 @@
   "main": "tasks/sakugawa.js",
   "scripts": {
     "test": "grunt && node tests/sakugawa_tape.js",
-    "coverage": "istanbul cover tests/sakugawa_tape.js && codecov",
     "lint": "eslint -c .eslintrc.json Gruntfile.js tasks"
   },
   "files": [
@@ -53,7 +52,6 @@
     "eslint-config-paazmaya": "^2.3.1",
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.0",
-    "istanbul": "^0.4.4",
     "tape": "~4.6"
   }
 }
