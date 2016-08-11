@@ -124,6 +124,10 @@ For example the underscore before file counter, `styles_1.css`.
 
 ## Version history
 
+* `v0.5.1` (2016-08-11)
+  - Dependencies are sure :tophat: up to date
+  - Use ESLint directly without the Grunt.js plugin
+  - Start testing with code coverage #1
 * `v0.5.0` (2016-05-03)
   - Update to match Sakugawa `v0.5.0`
   - Compatible with Grunt `1.0.0`

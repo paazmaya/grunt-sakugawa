@@ -11,16 +11,6 @@
 module.exports = function gruntConf(grunt) {
 
   grunt.initConfig({
-    eslint: {
-      options: {
-        config: '.eslintrc.json',
-        format: 'stylish'
-      },
-      target: [
-        'Gruntfile.js',
-        'tasks/*.js'
-      ]
-    },
 
     clean: {
       tests: ['tmp']
@@ -66,9 +56,8 @@ module.exports = function gruntConf(grunt) {
   grunt.loadTasks('tasks');
 
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-eslint');
 
-  grunt.registerTask('test', ['eslint', 'clean', 'sakugawa']);
+  grunt.registerTask('test', ['clean', 'sakugawa']);
   grunt.registerTask('default', ['test']);
 
 };
