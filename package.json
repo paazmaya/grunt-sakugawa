@@ -10,7 +10,7 @@
   },
   "main": "tasks/sakugawa.js",
   "scripts": {
-    "test": "grunt && node tests/sakugawa_tape.js",
+    "test": "grunt && node tests/sakugawa_test.js",
     "lint": "eslint -c .eslintrc.json Gruntfile.js tasks"
   },
   "files": [
