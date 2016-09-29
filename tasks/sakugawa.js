@@ -28,6 +28,7 @@ module.exports = function gruntSakugawa(grunt) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
+
           return false;
         }
         else {
