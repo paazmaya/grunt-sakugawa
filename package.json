@@ -11,7 +11,7 @@
   "main": "tasks/sakugawa.js",
   "scripts": {
     "test": "grunt && node tests/sakugawa_test.js",
-    "lint": "eslint -c .eslintrc.json Gruntfile.js tasks"
+    "lint": "eslint Gruntfile.js tasks"
   },
   "files": [
     "tasks",
@@ -48,10 +48,10 @@
   },
   "devDependencies": {
     "codecov": "~2.1",
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-paazmaya": "^3.2.0",
     "grunt": "~1.0",
-    "grunt-contrib-clean": "~1.0",
+    "grunt-contrib-clean": "~1.1",
     "tape": "~4.6"
   }
 }
