@@ -1,11 +1,10 @@
-box: nodesource/trusty:LTS
-
+box: node:6-wheezy
 build:
   steps:
-    - npm-install
     - script:
         name: nodejs and npm version information
         code: npm --versions
+    - npm-install
     - script:
         name: ESLint everything!
         code: npm run lint
