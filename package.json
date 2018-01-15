@@ -47,9 +47,9 @@
     "sakugawa": "~0.5"
   },
   "devDependencies": {
-    "codecov": "~2.3",
-    "eslint": "^4.5.0",
-    "eslint-config-paazmaya": "^4.1.0",
+    "codecov": "~3.0",
+    "eslint": "^4.15.0",
+    "eslint-config-paazmaya": "^4.3.0",
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.1",
     "tape": "~4.8"
