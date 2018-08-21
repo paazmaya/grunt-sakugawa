@@ -51,7 +51,7 @@ module.exports = function gruntSakugawa(grunt) {
         }
 
         pages.forEach((css, index) => {
-          const target = dest.replace(/\.css/, options.suffix + (index + 1) + '.css');
+          const target = dest.replace(/\.css/u, options.suffix + (index + 1) + '.css');
           grunt.file.write(target, css);
         });
       });
