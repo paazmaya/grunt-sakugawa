@@ -44,7 +44,7 @@
     "grunt": "~1.0"
   },
   "dependencies": {
-    "sakugawa": "~0.5"
+    "sakugawa": "~0.6.0"
   },
   "devDependencies": {
     "codecov": "3.1.0",
