@@ -52,6 +52,6 @@
     "eslint-config-paazmaya": "5.2.0",
     "grunt": "1.0.3",
     "grunt-contrib-clean": "2.0.0",
-    "tape": "4.9.1"
+    "tape": "4.10.1"
   }
 }
