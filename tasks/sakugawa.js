@@ -6,7 +6,6 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
 
 const path = require('path');
 
@@ -36,7 +35,9 @@ module.exports = function gruntSakugawa(grunt) {
         }
       });
 
-      let dest = file.dest;
+      let {
+        dest
+      } = file;
 
       src.forEach(function eachSrc(srcPath) {
         const contents = grunt.file.read(srcPath);

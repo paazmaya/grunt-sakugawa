@@ -6,13 +6,13 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
+
 
 const tape = require('tape'),
   grunt = require('grunt');
 
 
-tape('media query separation', function (test) {
+tape('media query separation', (test) => {
   test.plan(2);
 
   const expected1 = grunt.file.read('tests/expected/pure-min_1.css');
@@ -25,7 +25,7 @@ tape('media query separation', function (test) {
 });
 
 
-tape('suffix usage', function (test) {
+tape('suffix usage', (test) => {
   test.plan(1);
 
   test.ok(grunt.file.exists('tmp/suffixdash-split-1.css'));

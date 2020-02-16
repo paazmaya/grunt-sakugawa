@@ -6,7 +6,6 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
 
 module.exports = function gruntConf(grunt) {
 
