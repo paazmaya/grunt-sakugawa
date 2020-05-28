@@ -29,7 +29,7 @@ resulting output or input handling, and also for any feature requests, please re
 ## Getting Started
 
 This plugin requires [Grunt](http://gruntjs.com/) `~0.4` and [Node.js](https://nodejs.org/en/)
-version to be minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
+version to be minimum of `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the
 [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create
@@ -127,8 +127,9 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Version history
 
-* `v0.6.0` (2017-07)
-  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+* `v0.6.0` (2020-05-28)
+  - Minimum Node.js version lifted from `4.2.0` to `10.13.0`
+  - Four years worth of dependency updates :tophat:
 * `v0.5.1` (2016-08-11)
   - Dependencies are sure :tophat: up to date
   - Use ESLint directly without the Grunt.js plugin
