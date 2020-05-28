@@ -5,7 +5,6 @@
 
 ![Mr Sakugawa and Mr Grunt](./logo.png)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-sakugawa/index?flat)](https://github.com/igrigorik/ga-beacon)
 [![Dependency Status](https://img.shields.io/david/paazmaya/grunt-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa)
 [![devDependency Status](https://img.shields.io/david/dev/paazmaya/grunt-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sakugawa#info=devDependencies)
 [![wercker status](https://app.wercker.com/status/bfd3bc415622e44982d6c09bfe931e70/s "wercker status")](https://app.wercker.com/project/bykey/bfd3bc415622e44982d6c09bfe931e70)
