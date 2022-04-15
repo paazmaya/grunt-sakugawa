@@ -7,7 +7,6 @@
  */
 
 
-
 const tape = require('tape'),
   grunt = require('grunt');
 
